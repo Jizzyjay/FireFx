@@ -12,7 +12,7 @@ const Banner = () => {
           Forex Trading.
         </h2>
         <p className="text-[#979797] text-[16px] leading-7 pb-4">
-          Firepips is your sure guide to financial freedom. We're a supportive
+          Firepips is your sure guide to financial freedom.  we&apos;re a supportive
           community dedicated to teaching you the art of profitable forex
           trading.
         </p>
