@@ -1,25 +1,29 @@
-
-import './App.css'
-import Button from './components/atoms/Button'
-import TestimonialCard from './components/atoms/TestimonialCard'
+import "./App.css";
+import Navbar from "./components/molecules/Navbar";
+import Logo from './assets/logo.svg'
+import Banner from "./components/molecules/Banner";
+import Offer from "./components/molecules/Offer";
+import Footer from "./components/molecules/Footer";
+import Subcribe from "./components/molecules/Subcribe";
 
 function App() {
+  const menuItems = [
+    { label: "Mentorship Plan", link: "/mentorship-plan" },
+    { label: "Mentorship Courses", link: "/mentorship-courses" },
+    { label: "Fire Calculator", link: "/fire-calculator" },
+    { label: "Blog", link: "/blog" },
+    { label: "FAQ", link: "/faq" },
+  ];
 
   return (
-    <>
-       <h1 className="text-3xl font-bold underline">
-      Hello world! wrgzz
-    </h1>
-    <Button text="button" />
-    <TestimonialCard
-        topic="Great Experience"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et quam vitae elit eleifend venenatis."
-        profileImage="https://images.pexels.com/photos/20568187/pexels-photo-20568187/free-photo-of-mehrazin.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        name="John Doe"
-        job="CEO, Company XYZ"
-      />
-    </>
-  )
+    <div>
+      <Navbar logo={Logo} menuItems={menuItems} />
+      <Banner />
+      <Offer />
+      <Subcribe />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
