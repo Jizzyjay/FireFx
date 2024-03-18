@@ -3,6 +3,8 @@ import Navbar from "./components/molecules/Navbar";
 import Logo from './assets/logo.svg'
 import Banner from "./components/molecules/Banner";
 import Offer from "./components/molecules/Offer";
+import Footer from "./components/molecules/Footer";
+import Subscribe from "./components/molecules/Subscribe";
 
 function App() {
   const menuItems = [
@@ -18,6 +20,8 @@ function App() {
       <Navbar logo={Logo} menuItems={menuItems} />
       <Banner />
       <Offer />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
